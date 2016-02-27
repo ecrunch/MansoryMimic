@@ -1,0 +1,135 @@
+.dude {
+	width: 230px;
+	height: 75px;
+	background-color: #661500;
+	position: fixed;
+	top: 20px;
+	left: 50px;
+}
+
+.dude2 {
+	width: 230px;
+	height: 75px;
+	background-color: #80007f;
+	position: fixed;
+	top: 115px;
+	left: 50px;
+}
+
+.dude3 {
+	width: 230px;
+	height: 75px;
+	background-color: #80007f;
+	position: fixed;
+	top: 210px;
+	left: 50px;
+}
+
+.dude4 {
+	width: 230px;
+	height: 75px;
+	background-color: #80007f;
+	position: fixed;
+	top: 305px;
+	left: 50px;
+}
+
+.dude5 {
+	width: 230px;
+	height: 75px;
+	background-color: #80007f;
+	position: fixed;
+	top: 400px;
+	left: 50px;
+}
+
+.dude6 {
+	width: 230px;
+	height: 75px;
+	background-color: #80007f;
+	position: fixed;
+	top: 495px;
+	left: 50px;
+}
+
+.list{
+	display: inline;
+	float: left;
+	background-color: #002966;
+	height: 300px;
+	width: 200px;
+	margin: 10px;
+}
+
+.listBig{
+	display: inline;
+	float: left;
+	background-color: #002966;
+	height: 300px;
+	width: 640px;
+	margin: 10px;
+}
+
+.profile {
+	width: 230px;
+	height: 300px;
+	background-color: #80007f;
+	position: fixed;
+	top: 20px;
+	right: 50px;
+}
+
+.profile_Button1 {
+	width: 110px;
+	height: 110px;
+	top: 340px;
+	right: 50px;
+	background-color: #80007f;
+	position: fixed;
+}
+
+.profile_Button2 {
+	width: 110px;
+	height: 110px;
+	top: 340px;
+	right: 170px;
+	background-color: #80007f;
+	position: fixed;
+}
+
+.profile_Button3 {
+	width: 110px;
+	height: 110px;
+	top: 460px;
+	right: 50px;
+	background-color: #80007f;
+	position: fixed;
+}
+
+.profile_Button4 {
+	width: 110px;
+	height: 110px;
+	top: 460px;
+	right: 170px;
+	background-color: #80007f;
+	position: fixed;
+}
+
+li {
+	list-style:none;
+	padding-left:0;
+	display: inline;
+
+}
+
+ul {
+	margin:0;
+	padding-left:0;
+}
+
+.container {
+	height: 550px;
+	margin: 0 auto;
+}
+
+

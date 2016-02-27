@@ -1,0 +1,22 @@
+<div [ngStyle]="{'width': containerWidth}"class="container">
+	<ul>
+		<li *ngFor="#group of group; #i = index">
+			<div [ngStyle]="{'width': group.width, 'height': group.height}" class="list">
+				{{group.name}}
+				<button (click)="onClickMe(i)">Big</button>
+			</div>
+		</li>
+	</ul>
+</div>
+
+<div class="dude"><button (click)="containerChange()">Change</button></div>
+<div class="dude2"></div>
+<div class="dude3"></div>
+<div class="dude4"></div>
+<div class="dude5"></div>
+<div class="dude6"></div>
+<div class="profile"></div>
+<div class="profile_Button1"></div>
+<div class="profile_Button2"></div>
+<div class="profile_Button3"></div>
+<div class="profile_Button4"></div>
