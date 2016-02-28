@@ -10,13 +10,12 @@
 </div>
 
 <div class="dude"><button (click)="containerChange()">Change</button></div>
-<div class="dude2"></div>
-<div class="dude3"></div>
-<div class="dude4"></div>
-<div class="dude5"></div>
-<div class="dude6"></div>
-<div class="profile"></div>
-<div class="profile_Button1"></div>
-<div class="profile_Button2"></div>
-<div class="profile_Button3"></div>
-<div class="profile_Button4"></div>
+
+<div class="sideContainer" [ngStyle]="{'display': sideView}">
+	<div class="list">
+		{{group[1].name}}
+	</div>
+	<div class="list">
+		{{group[2].name}}
+	</div>
+</div>

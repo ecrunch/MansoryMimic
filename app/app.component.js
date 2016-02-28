@@ -23,51 +23,57 @@ System.register(['angular2/core', 'angular2/common'], function(exports_1) {
                 function AppComponent() {
                     this.title = 'Testing heading';
                     this.group = [
-                        { "id": 1, "name": "tacoman", "width": '200px', "height": '300px' },
-                        { "id": 2, "name": "Buritoman", "width": '200px', "height": '300px' },
-                        { "id": 3, "name": "Testman", "width": '200px', "height": '300px' },
-                        { "id": 4, "name": "Flyman", "width": '200px', "height": '300px' },
-                        { "id": 5, "name": "Oman", "width": '200px', "height": '300px' },
-                        { "id": 6, "name": "man", "width": '200px', "height": '300px' },
-                        { "id": 7, "name": "Bman", "width": '200px', "height": '300px' },
-                        { "id": 8, "name": "Coman", "width": '200px', "height": '300px' },
-                        { "id": 9, "name": "Rman", "width": '200px', "height": '300px' },
-                        { "id": 10, "name": "Tman", "width": '200px', "height": '300px' },
-                        { "id": 1, "name": "tacoman", "width": '200px', "height": '300px' },
-                        { "id": 2, "name": "Buritoman", "width": '200px', "height": '300px' },
-                        { "id": 3, "name": "Testman", "width": '200px', "height": '300px' },
-                        { "id": 4, "name": "Flyman", "width": '200px', "height": '300px' },
-                        { "id": 5, "name": "Oman", "width": '200px', "height": '300px' },
-                        { "id": 6, "name": "man", "width": '200px', "height": '300px' },
-                        { "id": 7, "name": "Bman", "width": '200px', "height": '300px' },
-                        { "id": 8, "name": "Coman", "width": '200px', "height": '300px' },
-                        { "id": 9, "name": "Rman", "width": '200px', "height": '300px' },
-                        { "id": 10, "name": "Tman", "width": '200px', "height": '300px' }
+                        { "id": 1, "name": "tacoman", "width": '250px', "height": '300px' },
+                        { "id": 2, "name": "Buritoman", "width": '250px', "height": '300px' },
+                        { "id": 3, "name": "Testman", "width": '250px', "height": '300px' },
+                        { "id": 4, "name": "Flyman", "width": '250px', "height": '300px' },
+                        { "id": 5, "name": "Oman", "width": '250px', "height": '300px' },
+                        { "id": 6, "name": "man", "width": '250px', "height": '300px' },
+                        { "id": 7, "name": "Bman", "width": '250px', "height": '300px' },
+                        { "id": 8, "name": "Coman", "width": '250px', "height": '300px' },
+                        { "id": 9, "name": "Rman", "width": '250px', "height": '300px' },
+                        { "id": 10, "name": "Tman", "width": '250px', "height": '300px' },
+                        { "id": 1, "name": "tacoman", "width": '250px', "height": '300px' },
+                        { "id": 2, "name": "Buritoman", "width": '250px', "height": '300px' },
+                        { "id": 3, "name": "Testman", "width": '250px', "height": '300px' },
+                        { "id": 4, "name": "Flyman", "width": '250px', "height": '300px' },
+                        { "id": 5, "name": "Oman", "width": '250px', "height": '300px' },
+                        { "id": 6, "name": "man", "width": '250px', "height": '300px' },
+                        { "id": 7, "name": "Bman", "width": '250px', "height": '300px' },
+                        { "id": 8, "name": "Coman", "width": '250px', "height": '300px' },
+                        { "id": 9, "name": "Rman", "width": '250px', "height": '300px' },
+                        { "id": 10, "name": "Tman", "width": '250px', "height": '300px' }
                     ];
                     this.width = '200px';
-                    this.containerWidth = '660px';
+                    this.containerWidth = '1080px';
+                    this.sideView = 'none';
                 }
+                // '660px'
                 AppComponent.prototype.onClickMe = function (i) {
                     console.log('here');
-                    if (this.group[i].width === '200px') {
-                        this.group[i].width = '420px';
+                    if (this.group[i].width === '250px') {
+                        this.containerChange();
+                        this.group[i].width = '790px';
                         this.group[i].height = '620px';
                         this.tmp = this.group[i];
                         this.group[i] = this.group[0];
                         this.group[0] = this.tmp;
                         this.tmp = '';
+                        this.sideView = 'inline';
                     }
                     else {
-                        this.group[i].width = '200px';
+                        this.group[i].width = '250px';
                         this.group[i].height = '300px';
+                        this.containerChange();
+                        this.sideView = 'none';
                     }
                 };
                 AppComponent.prototype.containerChange = function () {
-                    if (this.containerWidth === '440px') {
-                        this.containerWidth = '660px';
+                    if (this.containerWidth === '1080px') {
+                        this.containerWidth = '810px';
                     }
                     else {
-                        this.containerWidth = '440px';
+                        this.containerWidth = '1080px';
                     }
                 };
                 AppComponent = __decorate([
